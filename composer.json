@@ -7,7 +7,8 @@
   "require": {
     "php": "^8.0",
     "ext-json": "*",
-    "ext-rdkafka": "*"
+    "ext-rdkafka": "*",
+    "symfony/messenger": "5.3.*"
   },
   "autoload": {
     "psr-4": {

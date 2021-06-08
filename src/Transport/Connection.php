@@ -126,7 +126,7 @@ class Connection
 
     public function get(): ?Message
     {
-        if (!$message = $this->subscribedConsumer()->consume(1000 /* $this->options['read_timeout']*/)) {
+        if (!$message = $this->subscribedConsumer()->consume($this->options['read_timeout'])) {
             return null;
         }
 
@@ -164,10 +164,5 @@ class Connection
             );
         }
         $producer->poll(0);
-    }
-
-    public function flush(int $timeout): void
-    {
-        $this->producer()->flush($timeout);
     }
 }

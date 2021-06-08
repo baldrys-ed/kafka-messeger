@@ -72,6 +72,5 @@ class KafkaReceiver implements ReceiverInterface
 
     public function reject(Envelope $envelope): void
     {
-        // Do nothing. auto commit should be set to false!
     }
 }
