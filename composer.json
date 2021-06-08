@@ -1,0 +1,17 @@
+{
+  "name": "dev/kafka-messenger",
+  "type": "symfony-bundle",
+  "description": "Symfony Messenger Kafka Transport",
+  "keywords": [],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*",
+    "ext-rdkafka": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Symfony\\Component\\Messenger\\Bridge\\Kafka\\": "src/"
+    }
+  }
+}

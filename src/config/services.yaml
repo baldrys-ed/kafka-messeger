@@ -1,0 +1,3 @@
+services:
+    Symfony\Component\Messenger\Bridge\Kafka\Transport\KafkaTransportFactory:
+        autoconfigure: true
