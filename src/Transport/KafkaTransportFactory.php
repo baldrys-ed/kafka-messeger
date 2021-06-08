@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Symfony\Component\Messenger\Bridge\Kafka\Transport;
 
-use Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
 use Symfony\Component\Messenger\Transport\Serialization\SerializerInterface;
 use Symfony\Component\Messenger\Transport\TransportFactoryInterface;
 use Symfony\Component\Messenger\Transport\TransportInterface;
 
-#[Autoconfigure(tags: ['messenger.transport_factory'])]
 class KafkaTransportFactory implements TransportFactoryInterface
 {
     private const DSN = 'kafka://';
